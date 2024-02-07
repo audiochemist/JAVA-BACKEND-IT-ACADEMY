@@ -1,0 +1,94 @@
+### IntelliJ IDEA ###
+out/
+!**/src/main/**/out/
+!**/src/test/**/out/
+
+# Ignore Gradle project-specific cache directory
+.gradle
+
+# Ignore Gradle build output directory
+build
+# Carpeta de compilación de Java
+bin/
+
+# Carpeta de archivos generados por IDEs y editores
+.idea/
+.vscode/
+
+# Archivos de configuración de Eclipse
+.settings/
+
+# Carpetas y archivos específicos de NetBeans
+nbproject/
+nb-configuration.xml
+
+# Archivos de registro
+*.log
+
+# Carpetas y archivos generados por Maven
+target/
+mvnw
+mvnw.cmd
+
+# Carpetas y archivos generados por Gradle
+build/
+.gradle/
+
+# Carpeta y archivos de dependencias
+lib/
+
+# Carpeta y archivos de registros y respaldo
+log/
+backup/
+
+### Eclipse ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+!**/src/main/**/bin/
+!**/src/test/**/bin/
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+
+# Ignore Gradle project-specific cache directory
+
+
+# Ignore Gradle build output directory
+
+
+# Carpeta de archivos generados por IDEs y editores
+
+
+# Archivos de configuración de Eclipse
+
+
+# Carpetas y archivos específicos de NetBeans
+
+
+# Archivos de registro
+
+
+# Carpetas y archivos generados por Maven
+
+
+# Carpetas y archivos generados por Gradle
+
+
+# Carpeta y archivos de dependencias
+
+
+# Carpeta y archivos de registros y respaldo
+
+
+### Mac OS ###
+.DS_Store
