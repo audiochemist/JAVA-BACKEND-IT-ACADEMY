@@ -17,7 +17,7 @@ public class Input {
                 value = sc.nextByte();
                 valid = true;
             } catch (InputMismatchException e) {
-                System.out.println("Please enter a valid byte.");
+                System.err.println("Please enter a valid byte.");
                 sc.nextLine();
             }
         }
@@ -36,7 +36,7 @@ public class Input {
                 value = sc.nextInt();
                 valid = true;
             } catch (InputMismatchException e) {
-                System.out.println("Please enter a valid integer.");
+                System.err.println("Please enter a valid integer.");
                 sc.nextLine();
             }
 
@@ -56,7 +56,7 @@ public class Input {
                 value = sc.nextFloat();
                 valid = true;
             } catch (InputMismatchException e) {
-                System.out.println("Please enter a valid float");
+                System.err.println("Please enter a valid float");
                 sc.nextLine();
             }
         }
@@ -74,7 +74,7 @@ public class Input {
                 value = sc.nextDouble();
                 valid = true;
             } catch (InputMismatchException e) {
-                System.out.println("Please enter a valid double");
+                System.err.println("Please enter a valid double");
                 sc.nextLine();
             }
         }
@@ -93,7 +93,7 @@ public class Input {
                 value = sc.next().charAt(0);
                 valid = true;
             } catch (Exception e) {
-                System.out.println("Please enter a valid character");
+                System.err.println("Please enter a valid character");
                 sc.nextLine();
             }
         }
@@ -116,7 +116,7 @@ public class Input {
                     valid = true;
                 }
             } catch (Exception e) {
-                System.out.println("Please enter a valid String");
+                System.err.println("Please enter a valid String");
                 sc.nextLine();
 
             }
@@ -126,15 +126,16 @@ public class Input {
 
     public static boolean readBoolean(String message) {
         System.out.println(message);
+        String sameValue = sc.next();
         boolean value = false;
         boolean valid = false;
+
 
         while (!valid) {
             try {
                 value = sc.nextBoolean();
                 valid = true;
             } catch (Exception e) {
-                String sameValue = sc.next();
                 if (sameValue.equalsIgnoreCase("y")) {
                     value = true;
                     valid = true;
@@ -142,7 +143,7 @@ public class Input {
                     value = false;
                     valid = true;
                 } else {
-                    System.out.println("Please enter a valid boolean");
+                    System.err.println("Please enter a valid boolean");
                     sc.nextLine();
                 }
             }

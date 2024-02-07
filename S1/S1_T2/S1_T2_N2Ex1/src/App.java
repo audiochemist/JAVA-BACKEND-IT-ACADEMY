@@ -4,7 +4,6 @@ public class App {
 
         Input input = new Input();
 
-
         byte age = (Input.readByte("Enter your age:"));
         int years = (Input.readInt("Enter your years of experience in the sector:"));
         float exactYears = (Input.readFloat("Enter the exact number of years with decimals"));
